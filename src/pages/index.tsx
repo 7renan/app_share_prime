@@ -10,6 +10,7 @@ import { Pivot, PivotItem, Text } from "@fluentui/react";
 // styles
 import styles from './home.module.scss'
 import { useState } from 'react';
+import { Registration } from '../components/Registration';
 
 
 const Home: NextPage = () => {
@@ -27,12 +28,7 @@ const Home: NextPage = () => {
             alwaysRender={true}
             itemKey="registration"
           >
-            <div>CADSSTRAO</div>
-            {/* <ConfigCarrossel
-              items={items}
-              setItems={this.setItems}
-              changePage={this.changePage}
-            /> */}
+            <Registration/>
           </PivotItem>
         </Pivot>
     </>

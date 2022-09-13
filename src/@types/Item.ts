@@ -1,6 +1,9 @@
+import internal from "stream";
+
 export interface Item {
+    id: number;
     title: string;
-    text: string;
-    img: string;
-    order: number;
+    description: string;
+    url_file: string;
+    url_direction: string;
   }

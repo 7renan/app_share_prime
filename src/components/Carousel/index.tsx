@@ -35,20 +35,6 @@ export function Carousel (props: ICarrosselProps){
       <div className={styles.container}>
         <img className={styles.arrows} src="/previous.png" onClick={prevSlide} alt="Slide" />
         <section className={styles.slider}>
-        {/* <div className={styles.leftArrow} onClick={prevSlide}>
-        <Image
-            width={40}
-            height={40}
-            src="/next.png"
-        />
-        </div>
-        <div className={styles.rightArrow} onClick={nextSlide}>
-          <Image
-            width={40}
-            height={40}
-            src="/next.png"
-            />
-        </div> */}
         {props.items.map((slide, i) => {
           return (
             <>
@@ -57,9 +43,9 @@ export function Carousel (props: ICarrosselProps){
                 <div className={styles.contentCarousel}>
                   <div className={styles.carouselText}>
                     <h2>{slide.title}</h2>
-                    <p>{slide.text}</p>
+                    <p>{slide.description}</p>
                   </div>
-                  <img className={styles.image} src={slide.img} alt="Slide" />
+                  <img className={styles.image} src={slide.url_direction} alt="Slide" />
                 </div>
               )}
             </div>
